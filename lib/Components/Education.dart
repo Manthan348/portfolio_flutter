@@ -23,7 +23,7 @@ class _EducationState extends State<Education> {
               ? context.screenWidth * 0.5
               : context.screenWidth * 0.4,
       decoration: BoxDecoration(
-        color: Colors.purple.shade200,
+        color: Colors.white,
         borderRadius: BorderRadius.circular(20.0),
       ),
       padding: const EdgeInsets.all(
@@ -51,6 +51,7 @@ class _EducationState extends State<Education> {
               contentsAlign: ContentsAlign.alternating,
               contentsBuilder: (context, index) {
                 return Card(
+                  color: Colors.purple.shade50,
                   child: Padding(
                     padding: const EdgeInsets.all(12.0),
                     child: Column(

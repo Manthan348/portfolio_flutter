@@ -27,6 +27,7 @@ class _PortfolioState extends State<Portfolio> {
         child: ElevatedButton(
             onPressed: () {
               Scrollable.ensureVisible(eduKey.currentContext!);
+              ScaffoldState().closeDrawer();
             },
             child: Text("Education")),
       ),
@@ -46,9 +47,10 @@ class _PortfolioState extends State<Portfolio> {
   Widget build(BuildContext context) {
     isMobile = MediaQuery.of(context).size.width > 700 ? false : true;
     return Scaffold(
+      backgroundColor: Colors.purple.shade100,
       appBar: AppBar(
         shadowColor: Colors.green.shade200,
-        title: Text("Desi Programmer"),
+        title: Text("Manthan Jadav"),
         actions: isMobile ? null : navItems,
       ),
       drawer: isMobile

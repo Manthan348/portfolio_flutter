@@ -26,7 +26,7 @@ class _AnimatedContactState extends State<AnimatedContact> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: widget.onTap,
       onHover: (val) {
         setState(() {
           isHovering = val;
@@ -42,7 +42,7 @@ class _AnimatedContactState extends State<AnimatedContact> {
             12.0,
           ),
           border: Border.all(
-            color: isHovering ? Colors.grey : Colors.white,
+            color: isHovering ? Colors.grey : Colors.black,
           ),
         ),
         margin: EdgeInsets.only(

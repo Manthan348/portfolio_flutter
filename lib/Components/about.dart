@@ -2,7 +2,7 @@ import 'package:c/utilitis/social.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:velocity_x/velocity_x.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 import '../utilitis/animated_contact.dart';
 
 class About extends StatefulWidget {
@@ -25,7 +25,7 @@ class _AboutState extends State<About> {
               ? context.screenWidth * 0.3
               : context.screenWidth * 0.2,
       decoration: BoxDecoration(
-        color: Colors.purple.shade200,
+        color: Colors.white,
         borderRadius: BorderRadius.circular(20.0),
       ),
       padding: EdgeInsets.all(
@@ -86,8 +86,13 @@ class _AboutState extends State<About> {
               ),
               Divider(),
               AnimatedContact(
+                
                   iconData: FontAwesomeIcons.github,
-                  onTap: () {},
+                  onTap: () async {
+                    await launchUrlString(
+                        "https://www.youtube.com/watch?v=I56acG16bSo",
+                        mode: LaunchMode.externalApplication);
+                  },
                   onPressed: () {},
                   subtitle: "manthan",
                   title: "Github"),

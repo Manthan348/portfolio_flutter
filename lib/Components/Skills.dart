@@ -28,8 +28,7 @@ class Skills extends StatelessWidget {
               ? context.screenWidth * 0.9
               : ((context.screenWidth * 0.8) / 3),
           decoration: BoxDecoration(
-              color: Colors.purple.shade200,
-              borderRadius: BorderRadius.circular(28.0)),
+              color: Colors.white, borderRadius: BorderRadius.circular(28.0)),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
@@ -78,8 +77,7 @@ class Skills extends StatelessWidget {
               ? context.screenWidth * 0.9
               : ((context.screenWidth * 0.8) / 3),
           decoration: BoxDecoration(
-              color: Colors.purple.shade200,
-              borderRadius: BorderRadius.circular(28.0)),
+              color: Colors.white, borderRadius: BorderRadius.circular(28.0)),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
@@ -128,8 +126,7 @@ class Skills extends StatelessWidget {
               ? context.screenWidth * 0.9
               : ((context.screenWidth * 0.8) / 3),
           decoration: BoxDecoration(
-              color: Colors.purple.shade200,
-              borderRadius: BorderRadius.circular(28.0)),
+              color: Colors.white, borderRadius: BorderRadius.circular(28.0)),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,

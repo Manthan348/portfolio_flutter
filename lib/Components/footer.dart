@@ -7,7 +7,7 @@ class Footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.purple.shade200,
+      color: Colors.purple.shade100,
       padding: const EdgeInsets.all(
         20.0,
       ),
@@ -21,7 +21,7 @@ class Footer extends StatelessWidget {
             height: 10.0,
           ),
           Text(
-            "Desi Programmer",
+            "Manthan Jadav",
           ),
         ],
       ),
