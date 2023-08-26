@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Portfolio',
+      
       theme: ThemeData(
         primarySwatch: Colors.blue,
         canvasColor: Colors.purple.shade50,
